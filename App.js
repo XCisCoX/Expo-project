@@ -4,11 +4,14 @@ import Font from 'expo-font';
 import HeaderApp from "./Components/Header";
 import FooterApp from "./Components/Footer";
 import ContentApp from "./Components/Content";
-import { faker } from "@faker-js/faker";
-//use state is a code for re render app so you don't need to render again to see resault
+//import { faker } from '@faker-js/faker/locale/fa';
+import { faker } from '@faker-js/faker';
+
+
 
 export default function App() {
-  const UserNames="CiSCO_X";
+  //use state is a code for re render app so you don't need to render again to see resault
+
   const [Captions,getCaptions]=useState("Anyting");
   var arrayItems=[];
 
@@ -54,7 +57,7 @@ const styles=StyleSheet.create({
    // alignItems:"center" //chapo rast control mikone
   },
 
-  MainText :{
+  MainTexts :{
     textAlign:"center",
     margin:0,flex:0, 
     fontSize:20

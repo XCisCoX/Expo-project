@@ -15,7 +15,7 @@ const styles=StyleSheet.create({
 
     HeaderBackground: {
         flex:0.15,
-        backgroundColor:"#01a1b5",
+        backgroundColor:"#202225",
         justifyContent:"center",
     },
      MainText :{

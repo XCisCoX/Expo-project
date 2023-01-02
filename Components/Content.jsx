@@ -13,7 +13,7 @@ export default function ContentApp(probs){
      }} />
            </View>
            <View style={styles.ContentTopText}>
-              <Text style={[styles.MainText,{color:"#fff"}]}>{probs.profileName}</Text>
+              <Text style={styles.MainText}>{probs.profileName}</Text>
            </View>
         </View>
         
@@ -37,7 +37,7 @@ export default function ContentApp(probs){
         <ScrollView >
           <Text style={[styles.MainText,{fontSize:14}]}>{probs.comments}</Text>
         </ScrollView>
-        <TextInput style={styles.ContentbotComment} placeholder="Instert Your Comments"/>  
+        <TextInput style={styles.ContentbotComment} placeholder="Instert Your Comments" placeholderTextColor="#aaa"/>  
         {/* You can use numeric for number only and placerholder color to set collor*/}
               
      
@@ -52,9 +52,11 @@ const styles=StyleSheet.create({
     
   MainText :{
     textAlign:"center",
-    fontSize:20  },
+    fontSize:20 ,
+    color:"white",
+   },
 ContentBackground: {
-    backgroundColor:"#fafafa",
+    backgroundColor:"#36393f",
     justifyContent:"flex-start",
     alignItems:"stretch",
     paddingVertical:10,
@@ -63,14 +65,14 @@ ContentBackground: {
 
           }, 
           Contenttop: {
-            backgroundColor:"#555",
+            backgroundColor:"#1e1e1e",
             justifyContent:"center",
             alignItems:"center",
             borderTopRightRadius:20,
             borderTopLeftRadius:20,
             flexDirection:"row",
             flex:0.15,
-            borderColor:"#292929",
+            borderColor:"#a9a9a9",
             borderWidth:4,
             borderBottomWidth:1,
           },
@@ -86,35 +88,34 @@ ContentBackground: {
           },
           Contentmid: {
             flex:0.5,
-            backgroundColor:"#fff",
+            backgroundColor:"#292b2f",
             justifyContent:"center",
             alignItems:"center",
-            borderColor:"#292929",
+            borderColor:"#a9a9a9",
             borderWidth:4,
             borderBottomWidth:1,
             borderTopWidth:0,
             
           },
           Contentbot: {
-            backgroundColor:"#fff",
+            backgroundColor:"#292b2f",
             justifyContent:"flex-start",
             alignItems:"flex-start",
             paddingHorizontal :10,
             paddingVertical:10,
             borderBottomRightRadius:20,
             borderBottomLeftRadius:20,
-            borderColor:"#292929",
+            borderColor:"#a9a9a9",
             borderWidth:4,
             borderTopWidth:0,
            flex:0.5,
           },
           
           ContentbotComment:{
-            borderColor:"black",
             borderWidth:1,
           padding:5,
-            backgroundColor:"white",
-            color:"black",
+            backgroundColor:"#191919",
+            color:"#fff",
             marginTop:5,
           flex:0.5,
           }
