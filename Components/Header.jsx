@@ -1,8 +1,9 @@
 import React from "react";
 import {View,Text,StyleSheet} from "react-native" ;
-
+import {faker, Faker} from '@faker-js/faker'
 export default function HeaderApp(probs){
     return (
+        
         <View style={styles.HeaderBackground}>
         <Text style={[styles.MainText,{color:"#fff"}]}>{probs.s}</Text>
      </View>
@@ -13,7 +14,7 @@ export default function HeaderApp(probs){
 const styles=StyleSheet.create({
 
     HeaderBackground: {
-        flex:0.2,
+        flex:0.15,
         backgroundColor:"#01a1b5",
         justifyContent:"center",
     },
